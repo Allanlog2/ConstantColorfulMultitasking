@@ -1,145 +1,95 @@
-/* Resetando margens e paddings */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-/* Cores e fontes */
-:root {
-  --primary-color: #1e88e5; /* Azul vibrante - confiança e frescor */
-  --secondary-color: #43a047; /* Verde suave - limpeza e frescor */
-  --background-color: #f1f8e9; /* Verde claro - suavidade */
-  --text-color: #333; /* Cor do texto */
-  --accent-color: #ffca28; /* Amarelo suave - energia e destaque */
-  --white: #fff; /* Branco */
-}
-
-/* Corpo e fonte */
 body {
   font-family: Arial, sans-serif;
-  background-color: var(--background-color);
-  color: var(--text-color);
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f9;
 }
 
-/* Header */
 header {
-  background-color: var(--primary-color);
-  color: var(--white);
+  background-color: #4CAF50;
+  color: white;
+  padding: 15px;
   text-align: center;
-  padding: 20px;
 }
 
-header h1 {
-  font-size: 2.5rem;
+h1 {
+  margin: 0;
+  font-size: 2rem;
 }
 
-header p {
-  font-size: 1.2rem;
+p {
+  margin: 5px 0;
 }
 
-/* Produtos */
 .products {
-  padding: 40px 20px;
-  text-align: center;
-}
-
-.products h2 {
-  font-size: 2.5rem;
-  margin-bottom: 20px;
+  padding: 20px;
 }
 
 .product-container {
   display: flex;
-  justify-content: space-around;
   flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
 }
 
 .product-card {
-  background-color: var(--white);
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  padding: 20px;
-  margin: 15px;
-  width: 250px;
+  background-color: white;
+  border: 1px solid #ddd;
   border-radius: 8px;
+  padding: 15px;
+  width: 200px;
   text-align: center;
-  transition: transform 0.3s;
-}
-
-.product-card:hover {
-  transform: scale(1.05);
 }
 
 .product-card img {
   width: 100%;
-  height: auto;
-  margin-bottom: 15px;
+  border-radius: 8px;
 }
 
-.product-card h3 {
-  font-size: 1.5rem;
-  margin-bottom: 10px;
-}
-
-.product-card p {
-  font-size: 1rem;
-  color: #777;
-  margin-bottom: 15px;
-}
-
-.product-card button {
-  background-color: var(--accent-color);
-  color: var(--white);
-  padding: 10px 20px;
+button {
+  background-color: #4CAF50;
+  color: white;
   border: none;
+  padding: 10px;
   border-radius: 5px;
   cursor: pointer;
-  font-size: 1rem;
+  margin-top: 10px;
 }
 
-.product-card button:hover {
-  background-color: #ffb300; /* Um tom mais intenso de amarelo */
+button:hover {
+  background-color: #45a049;
 }
 
-/* Carrinho de Compras */
 .cart {
-  padding: 40px 20px;
-  background-color: var(--white);
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  margin-top: 40px;
-}
-
-#checkout-button {
-  background-color: var(--primary-color);
-  color: var(--white);
-  padding: 15px 30px;
-  font-size: 1.2rem;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
+  padding: 20px;
+  background-color: white;
   margin-top: 20px;
 }
 
-#checkout-button:hover {
-  background-color: #1976d2; /* Tom mais forte do azul */
+#cart-items {
+  margin-bottom: 20px;
 }
 
-/* QR Code */
-#qr-code-section {
-  margin-top: 40px;
-  text-align: center;
+.cart-item {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  border: 1px solid #ddd;
+  margin-bottom: 10px;
+  border-radius: 5px;
 }
 
-/* Footer */
+.cart-item button {
+  background-color: #f44336;
+}
+
+.cart-item button:hover {
+  background-color: #d32f2f;
+}
+
 footer {
-  background-color: var(--secondary-color);
-  color: var(--white);
   text-align: center;
   padding: 20px;
-  margin-top: 30px;
+  background-color: #333;
+  color: white;
 }
-
-footer p {
-  font-size: 1rem;
-}
-
