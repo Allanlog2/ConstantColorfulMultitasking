@@ -47,7 +47,7 @@ document.addEventListener("DOMContentLoaded", () => {
   // Função de checkout (exibe o QR Code)
   document.getElementById("checkout-button").addEventListener("click", () => {
     if (cart.length > 0) {
-      document.getElementById("qr-code-section").style.display = "block";
+      document.getElementById("checkout").style.display = "block";
       const qrCodeContainer = document.getElementById("qr-code");
       qrCodeContainer.innerHTML = "";
       QRCode.toCanvas(document.createElement("canvas"), "21 99663 2428", (error) => {
